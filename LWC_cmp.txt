@@ -1,0 +1,8 @@
+productTile --> onclick={handleClick}
+productTile.js --> handleClick -> create an event named selected and dispatch that event.
+productTileList --> while calling <c-product-tile>, onselected={onSelectedHandler}
+productTileList.js --> fire the event that calls "productSelected". 
+productCard --> listens to productSelected.
+productCard.js --> handles productSelected. 
+
+create an event -> fire the event from Parent - hande the event in where-ever it has to be. 
